@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtubee</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+<body >
+  <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid  my-2" >
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3 ">
+                <div class="container-fluid ">
+                    <i class="fas fa-bars fa-lg me-3 ms-3"  id="toggler"></i>
+                 <b>
+                  <a class="navbar-brand ms-3" href="index.html"> Youtubee  <span class="video-icon p-2"><i class="fas fa-play-circle">  </i>  </span>  </a>
+                  
+                 </b> 
+                  
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                      <li class="nav-item ">
+                        <a class="nav-link active mx-2 px-2" aria-current="page" href="#">Suggested Videos</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link active mx-2 px-2" href="#">Newest</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active mx-2 px-2" href="#" tabindex="0">Trending</a>
+                      </li>
+
+                      <li class="nav-item">
+                      </li>
+                     
+                    </ul>
+                    <div class="d-flex">
+
+                      <input class="form-control mx-2" type="search" placeholder="Search" aria-label="Search">
+                      <button onclick="location.href='search.html';" class="btn btn-outline-danger btn-sm" type="submit">Search</button>
+
+
+                    </div>
+                  </div>
+                  <a class="nav-link active btn btn-success d-inline-block p-2 ms-5 me-3 " href="#"  data-bs-toggle="modal" data-bs-target="#LoginModal"  >Login</a>
+
+                </div>
+                <i class="fas fa-search mr-4 search-icon"></i>
+
+
+              </nav>
+              <input type="search" class="form-control search-input" placeholder="Search For ...">
+              <!-- Button trigger LoginModal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="LoginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Log In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="Email" class="col-form-label" >Enter Your Email Address:</label>
+            <input type="Email" class="form-control" id="Email" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label">Password:</label>
+            <input type="password" class="form-control" id="Password" placeholder="Password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="">Forget Password</a>
+        <a href="" class="mx-auto">Create Account</a>
+        <button type="button" class="btn btn-primary">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+
+
+<div class="row pt-4 mt-5">
+  <div id="wrap">
+    <div class="sidebar">
+      <ul class="list-group list-group-flush">
+      <a href="" class="list-group-item list-group-item-action">
+       <i class="fas fa-home mr-2 purple"></i>    Home Page
+      </a>
+
+      <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-download mr-2 purple"></i>    Downloads
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action"> 
+        <i class="fas fa-clock mr-2 purple"></i>    Watch Later
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-heart mr-2 purple"></i>    Liked Videos
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-video mr-2 purple"></i>    Your Videos
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-fire mr-2 purple"></i>    Trending
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-fire mr-2 purple"></i>    Trending
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-fire mr-2 purple"></i>    Trending
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-fire mr-2 purple"></i>    Trending
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-fire mr-2 purple"></i>    Trending
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-play mr-2 purple"></i>    Suggested Videos
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-gamepad mr-2 purple"></i>    Gaming Videos
+       </a>
+
+       <a href="log.html" class="list-group-item list-group-item-action">
+        <i class="fas fa-history mr-2 purple"></i>    Log
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fab fa-youtube mr-2 purple"></i>    Subscription
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-cog mr-2 purple"></i>    Setting
+       </a>
+
+       <a href="" class="list-group-item list-group-item-action">
+        <i class="fas fa-info-circle mr-2 purple"></i>    Help
+       </a>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <div class="content m-4 mt-5">
+ <br>  
+  <h4 class="my-3">Suggested Videos</h4>
+    <div class="row">
+      
+      
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+
+     
+    
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card h-100">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">  
+                <time>5:10</time>
+                <i class="fas fa-play fa-2x"></i>
+              
+            </div>
+           
+             <div class="card-body">
+              <p class="card-title">Learn something new Learn something new Learn something new </p>
+              </div> 
+                   </a> 
+
+                <div class="card-footer">
+                <small class="text-muted">
+                <i class="fas fa-eye"></i><span>3k views</span>
+                <br>
+                <i class="fas fa-clock"></i><span>2 years ago</span>
+              </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle mx-2 my-2" width="25px" >
+                <span class="card-text">Academy</span>
+              </a>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+    </div>
+  </div>
+
+
+
+    <script src="https://kit.fontawesome.com/3941b1f312.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+    <script src="JS/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+#search-filters-icon{
+    cursor: pointer;
+}
+.search-header .filter-column{
+    display: none;
+}
+
+input:checked+span{
+    color: red;
+}
+
+.card-horizontal .card-body  p{
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.card-body{
+    min-width: 0px;
+}
+@media(max-width:767px){
+    .card .card-top-image{
+        width: 100%;
+    }
+    .card .card-horizontal time{
+        left:10px
+    }
+
+    .card .card-horizontal .fa-play{
+        right: 45%;
+    }
+}
